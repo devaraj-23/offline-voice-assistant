@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "ssd1306.h": "c",
+        "wake_up_prompt_tone.h": "c",
+        "compare": "c",
+        "me_turn_on_the_light.h": "c"
+    }
+}

@@ -1,0 +1,114 @@
+dependencies:
+  eil/esp_idf_lib_helpers:
+    component_hash: eaee96f02db1bea59d369e53e46fd100331eb9d1d9726416cace4dd01f72698e
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.3'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.2.1
+  eil/i2cdev:
+    component_hash: 320f24484a1678083133ca19c195ea58740c188dd590626980b1cf2032539aaa
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.3'
+    - name: eil/esp_idf_lib_helpers
+      registry_url: https://components.espressif.com
+      require: private
+      version: '>=1.2.1'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.5.1
+  espressif/cmake_utilities:
+    component_hash: 351350613ceafba240b761b4ea991e0f231ac7a9f59a9ee901f751bddc0bb18f
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.1'
+    source:
+      registry_url: https://components.espressif.com
+      type: service
+    version: 0.5.3
+  espressif/esp-dsp:
+    component_hash: fa7fe74305df6da25867437ebcd4213e047cbfc0556cf92067ab657fce537c6e
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.2'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.5.2
+  espressif/esp-now:
+    component_hash: 56f902e978ec0b70528ad30a45265b56bf2b91653d13e0badc78159f39f41ece
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.4'
+    - name: espressif/cmake_utilities
+      registry_url: https://components.espressif.com
+      require: private
+      version: 0.*
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 2.5.2
+  espressif/ssd1306:
+    component_hash: 102cfc05b1b304862fa3f494e9dd955844bcc5f6cb16596e4ca5df3e6bf9fd0d
+    dependencies:
+    - name: idf
+      require: private
+      version: '>=4.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    version: 1.0.5~1
+  idf:
+    source:
+      type: idf
+    version: 5.4.0
+  k0i05/esp_ssd1306:
+    component_hash: bacb9e5e15cde514f7c7c0c13649dcf36819df167ae37982d0510abd2f8e30e2
+    dependencies:
+    - name: idf
+      require: private
+      version: '>5.3.0'
+    - name: k0i05/esp_type_utils
+      registry_url: https://components.espressif.com
+      require: private
+      version: '>=1.0.0'
+    source:
+      registry_url: https://components.espressif.com/
+      type: service
+    targets:
+    - esp32
+    - esp32s3
+    version: 1.2.1
+  k0i05/esp_type_utils:
+    component_hash: 3fca118a151c925e9bdf2dc8b624727d6ef7783f783b00a555b9a352c366525f
+    dependencies:
+    - name: idf
+      require: private
+      version: '>5.3.0'
+    source:
+      registry_url: https://components.espressif.com
+      type: service
+    targets:
+    - esp32
+    - esp32s3
+    version: 1.2.1
+direct_dependencies:
+- eil/esp_idf_lib_helpers
+- eil/i2cdev
+- espressif/esp-dsp
+- espressif/esp-now
+- espressif/ssd1306
+- idf
+- k0i05/esp_ssd1306
+manifest_hash: 73b7f9041f9a49f7f46ecff6fdb0a596d819c35c29a40f7d107fb33026ec43df
+target: esp32s3
+version: 2.0.0
