@@ -1,7 +1,3 @@
-To make your **README.md** look professional and polished, I have optimized the formatting using a mix of clean typography, structured tables, and clear iconography. This layout is designed to be highly readable on platforms like GitHub.
-
----
-
 # 🔊 Offline Voice Assistant for Home Appliances
 
 ### 📌 Overview
@@ -51,9 +47,9 @@ This project presents an **offline voice-controlled home automation system** usi
 ### 📂 Project Structure
 ```text
 Offline-Voice-Assistant/
-├── transmitter_code/      # ESP32 Source (ESP-IDF)
-├── receiver_code/         # ESP8266 Source (Arduino)
-├── docs/                  # Circuit diagrams & Schematics
+├── en_speech_commands_recognition/      # ESP32 Source (ESP-IDF)
+├── Receiver_code/         # ESP8266 Source (Arduino)
+├── Images/                  # Circuit diagrams & Schematics
 └── README.md              # Project Documentation
 ```
 
